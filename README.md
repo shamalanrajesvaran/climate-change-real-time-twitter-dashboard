@@ -1,12 +1,19 @@
-# climate-change-real-time-twitter-dashboard
+# Climate-Change-Real-Time-Twitter-Dashboard
 
-This PowerBI dashboard focuses heavily on providing clear visualisation and insights to justify the 4 goals set for the United Nation's Climate Change Conference of Parties (COP) held at Glasgow, Scotland. The Goals set during the conference are as follows:
+This real time dashboard scrapes Twitter tweets instantaneously, analyses them, and updates itself in a dashboard to identify the sentiment of conversation regarding climate change. To achieve the desired results, sample data was collected over a period to test the efficacy 
+and accuracy of the data. The real-time dashboard includes features such as:
 
-1. Secure global net zero by mid-century and keep 1.5 degrees within reach
-2. Adapt to protect communities and natural habitats
-3. Mobilise finance
-4. Work together to deliver
+• Line graph to indicate the number of positive and negative sentiments every 30 seconds
+• A toggle bar to enable the ability to navigate between the different timelines and zoom in
+• A mapping of all the climate tweets sent out in the United States. The states are highlighted based 
+on the number of tweets. The darker the blue, the greater the number of tweets sent out
+• A bar chart to include the frequently used words.
 
-This Dashboard utilises datasets from various credible sources in order to provide effective insights.
+![dashboard](dashboard.png)
 
-![PowerBI Dashboard Labelled](PowerBI-Dashboard.png)
+The data scraped from Twitter is stored locally in a MySQL database. The files required as follows:
+
+1. settings.py -> Includes the track words, table names and the type of attributes that is derived from each Tweet
+2. credentials.py -> Includes the API_KEY, API_SECRET_KEY, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
+3. analysis3rd.ipynb -> The Sentiment Analysis process and real time dashboard 
+4. main2.ipynb -> Twitter Scraper with the connection and storing to the MySQL database
