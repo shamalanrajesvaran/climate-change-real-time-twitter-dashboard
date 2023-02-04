@@ -3,11 +3,10 @@
 This real time dashboard scrapes Twitter tweets instantaneously, analyses them, and updates itself in a dashboard to identify the sentiment of conversation regarding climate change. To achieve the desired results, sample data was collected over a period to test the efficacy 
 and accuracy of the data. The real-time dashboard includes features such as:
 
-• Line graph to indicate the number of positive and negative sentiments every 30 seconds
-• A toggle bar to enable the ability to navigate between the different timelines and zoom in
-• A mapping of all the climate tweets sent out in the United States. The states are highlighted based 
-on the number of tweets. The darker the blue, the greater the number of tweets sent out
-• A bar chart to include the frequently used words.
+1. Line graph to indicate the number of positive and negative sentiments every 30 seconds
+2. A toggle bar to enable the ability to navigate between the different timelines and zoom in
+3. A mapping of all the climate tweets sent out in the United States. The states are highlighted based on the number of tweets. The darker the blue, the greater the number of tweets sent out
+4. A bar chart to include the frequently used words.
 
 ![dashboard](dashboard.png)
 
